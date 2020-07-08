@@ -1,0 +1,20 @@
+PODS:
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - lottie-ios (~> 2.5.3)
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - Masonry
+
+SPEC CHECKSUMS:
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 317ccedae6fbf331c8ccc3c42c3caf986bf27b0a
+
+COCOAPODS: 1.9.3
