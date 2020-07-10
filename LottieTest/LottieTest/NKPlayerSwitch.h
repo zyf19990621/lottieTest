@@ -9,6 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface TestView : UIView
+
+@end
+
 @interface NKPlayerSwitch : LOTAnimatedSwitch
 
 @property (nonatomic, assign) CGSize animationViewSize;

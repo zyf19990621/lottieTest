@@ -16,6 +16,26 @@
 
 static NSString * const kCompContainerAnimationKey = @"play";
 
+@interface TestLayer : CALayer
+
+@end
+
+@implementation TestLayer
+
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+}
+
+- (void)setPosition:(CGPoint)position {
+    [super setPosition:position];
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+}
+
+@end
+
 @implementation LOTAnimationView {
   LOTCompositionContainer *_compContainer;
   NSNumber *_playRangeStartFrame;
@@ -30,6 +50,10 @@ static NSString * const kCompContainerAnimationKey = @"play";
 }
 
 # pragma mark - Convenience Initializers
+
++ (Class)layerClass {
+    return [TestLayer class];
+}
 
 + (nonnull instancetype)animationNamed:(nonnull NSString *)animationName {
   return [self animationNamed:animationName inBundle:[NSBundle mainBundle]];
@@ -52,6 +76,14 @@ static NSString * const kCompContainerAnimationKey = @"play";
 + (nonnull instancetype)animationWithFilePath:(nonnull NSString *)filePath {
   LOTComposition *comp = [LOTComposition animationWithFilePath:filePath];
   return [[self alloc] initWithModel:comp inBundle:[NSBundle mainBundle]];
+}
+
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+}
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
 }
 
 # pragma mark - Initializers

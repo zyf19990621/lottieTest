@@ -14,6 +14,16 @@
 
 @implementation AppDelegate
 
+//- (instancetype)init {
+//    self = [super init];
+//    if (self) {
+//        CFRunLoopObserverRef observer1 = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, kCFRunLoopBeforeSources, YES, 1999900, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+//            NSLog(@"00000000000");
+//        });
+//        CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer1, kCFRunLoopDefaultMode);
+//    }
+//    return self;
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
